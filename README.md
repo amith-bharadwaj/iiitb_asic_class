@@ -21,6 +21,8 @@ sudo make install
 
 ![Screenshot from 2023-07-31 09-45-18](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/075fb4ad-5149-444b-a6cd-f94e4cd1a401)
 
+Yosys installed
+
 ### Icarus Verilog
 
 **Steps to install Icarus Verilog**
@@ -31,6 +33,8 @@ sudo apt-get install iverilog
 
 ![Screenshot from 2023-07-31 10-28-36](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/5b958d79-7c11-4461-946f-63404851f3d8)
 
+iverilog installed
+
 ### Gtkwave
 
 **Steps to install Gtkwave**
@@ -39,3 +43,5 @@ sudo apt update
 sudo apt install gtkwave
 ```
 ![Screenshot from 2023-07-31 09-46-18](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/06c56897-9099-4f39-8bfd-81f497640cdf)
+
+gtkwave installed
