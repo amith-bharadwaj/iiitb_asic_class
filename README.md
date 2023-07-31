@@ -1,5 +1,9 @@
 # iiitb_asic_class
 
+<details>
+<summary>DAY-1</summary>
+<br>
+
 ## Day-1
 
 ### Yosys Installation
@@ -45,3 +49,6 @@ sudo apt install gtkwave
 ![Screenshot from 2023-07-31 09-46-18](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/06c56897-9099-4f39-8bfd-81f497640cdf)
 
 gtkwave installed
+
+
+</details>
