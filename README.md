@@ -4,7 +4,7 @@
 <summary>DAY-1</summary>
 <br>
 
-## Day-1
+## DAY-1
 
 ### Yosys Installation
 
@@ -27,7 +27,7 @@ sudo make install
 
 Yosys installed
 
-### Icarus Verilog
+### Icarus Verilog Installation
 
 **Steps to install Icarus Verilog**
 ```
@@ -39,7 +39,7 @@ sudo apt-get install iverilog
 
 iverilog installed
 
-### Gtkwave
+### Gtkwave Installation
 
 **Steps to install Gtkwave**
 ```
