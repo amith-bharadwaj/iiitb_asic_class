@@ -51,8 +51,6 @@ sudo apt install gtkwave
 gtkwave installed
 
 
-</details>
-
 ### NGSPICE Installation
 
 **Steps to install NGSPICE**
@@ -147,6 +145,9 @@ cd OpenLane
 make
 make test
 ```
+
+
+</details>
 
 
    
