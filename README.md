@@ -1,4 +1,4 @@
-# iiitb_asic_class
+# iiitb_ASIC_Class
 ## Week-1
 
 <details>
