@@ -119,6 +119,8 @@ sudo make install
 ```
 ![Screenshot from 2023-08-05 09-42-43](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/578f2df7-708f-42d5-b6ea-9d7ce8befa1c)
 
+MAGIC installed successfully.
+
 ### OpenLane Installation
 
 Installation of dependencies:
