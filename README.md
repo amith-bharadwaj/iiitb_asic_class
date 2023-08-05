@@ -4,7 +4,7 @@
 <summary>DAY-1</summary>
 <br>
 
-## DAY-1
+## DAY-1 Installation of Softwares
 
 ### Yosys Installation
 
@@ -50,11 +50,12 @@ sudo apt install gtkwave
 
 gtkwave installed
 
-
 ### NGSPICE Installation
 
 **Steps to install NGSPICE**
+
 Download the file from the link given below and proceed with the commands.
+
 ***https://sourceforge.net/projects/ngspice/files/*** 
 
 ```
@@ -75,7 +76,7 @@ sudo make install
 
 ### OpenSTA Installation
 
-# Installing dependecies for OpenSTA:
+**Installing dependecies for OpenSTA:**
 
 ``` 
 sudo apt-get install cmake clang gcc tcl swig bison flex 
@@ -94,7 +95,7 @@ sudo make install
 
 ### MAGIC Installation
 
-Follow the below commands for the MAGIC Installation.
+**Follow the below commands for the MAGIC Installation.**
 ```
 sudo apt-get install m4
 sudo apt-get install tcsh
