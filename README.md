@@ -117,7 +117,7 @@ cd magic
 make
 sudo make install
 ```
-![Screenshot from 2023-08-05 09-36-36](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/fadd45c1-b0cc-4b44-8e95-b0e31d676381)
+![Screenshot from 2023-08-05 09-42-43](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/578f2df7-708f-42d5-b6ea-9d7ce8befa1c)
 
 ### OpenLane Installation
 
