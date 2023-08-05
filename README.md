@@ -144,11 +144,12 @@ sudo reboot
 
 # Enter the below command to check docker installation.
 sudo docker run hello-world
-![Screenshot from 2023-08-05 09-38-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ae9e486b-cdc8-4ba6-830f-ecd0e2d85717)
 
 
 
 ```
+
+![Screenshot from 2023-08-05 09-38-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ae9e486b-cdc8-4ba6-830f-ecd0e2d85717)
 Installation of OpenLane,Pdks and Tools
 ```
 cd $HOME
