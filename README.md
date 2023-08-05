@@ -54,7 +54,7 @@ gtkwave installed
 
 **Steps to install NGSPICE**
 
-Download the file from the link given below and proceed with the commands.
+#### Download the file from the link given below and proceed with the commands.
 
 ***https://sourceforge.net/projects/ngspice/files/*** 
 
