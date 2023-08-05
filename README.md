@@ -72,7 +72,11 @@ cd release
 make
 sudo make install
 
+
 ```
+![Screenshot from 2023-08-05 09-31-05](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/c6d0f93e-af50-42d9-9d52-53640ba4542b)
+
+NG spice installed successfully.
 
 ### OpenSTA Installation
 
@@ -92,6 +96,8 @@ cmake ..
 make
 sudo make install
 ```
+![Screenshot from 2023-08-05 09-34-17](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/dedce8c2-e755-44e9-acb8-2daf609377c4)
+
 
 ### MAGIC Installation
 
@@ -111,6 +117,7 @@ cd magic
 make
 sudo make install
 ```
+![Screenshot from 2023-08-05 09-36-36](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/fadd45c1-b0cc-4b44-8e95-b0e31d676381)
 
 ### OpenLane Installation
 
@@ -137,6 +144,10 @@ sudo reboot
 
 # Enter the below command to check docker installation.
 sudo docker run hello-world
+![Screenshot from 2023-08-05 09-38-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ae9e486b-cdc8-4ba6-830f-ecd0e2d85717)
+
+
+
 ```
 Installation of OpenLane,Pdks and Tools
 ```
