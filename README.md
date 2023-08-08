@@ -208,6 +208,13 @@ show
 ![Screenshot from 2023-08-08 20-26-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0b8f9396-3391-4d78-bc5a-54219c22be81)
 ![Screenshot from 2023-08-08 20-27-05](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b5bf8bf6-333d-49fd-8738-0f73456a5883)
 
+Follow the below command to write netlist.
+```
+write_verilog good_mux_netlist.v
+write_verilog -noattr good_mux_netlist.v
+!gvim good_mux_netlist.v
+
+```
 
 </details>  
 
