@@ -165,7 +165,7 @@ make test
 </details>
 
 <details>
-<summary>DAY-1</summary>
+<summary>DAY-3</summary>
 <br>
   
 </details>  
