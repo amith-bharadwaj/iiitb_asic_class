@@ -191,5 +191,23 @@ gtkwave tb_good_mux.vcd
 
 ```
 ![Screenshot from 2023-08-08 19-18-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f57ec40c-d7b9-4b3c-ba18-7f52c4c06784)
+
+### Synthesis of design
+Follow the below commands to invoke yosys in the working directory,read the library,read the verilog file and generate the netlist.
+
+```
+yosys
+read_liberty -lib VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/good_mux.v
+synth -top good_mux
+abc -liberty VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+# The show command will display the graphical version of the logic realized.
+```
+![Screenshot from 2023-08-08 20-25-27](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6594c550-a751-4e98-8c0a-701e629e45f3)
+![Screenshot from 2023-08-08 20-26-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0b8f9396-3391-4d78-bc5a-54219c22be81)
+![Screenshot from 2023-08-08 20-27-05](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b5bf8bf6-333d-49fd-8738-0f73456a5883)
+
+
 </details>  
 
