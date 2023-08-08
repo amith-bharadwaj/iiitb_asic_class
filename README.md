@@ -177,7 +177,6 @@ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ```
 
 
-</details>  
 
 The verilog_files directory contains the verilog programs and testbenches.
 Let us load the good_mux.v and its testbench to iverilog and simulate it.
@@ -192,3 +191,5 @@ gtkwave tb_good_mux.vcd
 
 ```
 ![Screenshot from 2023-08-08 19-18-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f57ec40c-d7b9-4b3c-ba18-7f52c4c06784)
+</details>  
+
