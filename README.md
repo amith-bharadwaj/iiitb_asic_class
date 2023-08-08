@@ -162,8 +162,11 @@ make
 make test
 ```
 
-
 </details>
 
 
-   
+ <summary>DAY-2</summary>
+<br>
+`
+
+</details>
