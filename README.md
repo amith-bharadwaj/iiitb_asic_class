@@ -294,6 +294,7 @@ write_verilog -noattr multiple_modules_flat.v
 
 ```
 In this multiple_modules_flat.v file, we can see that there are no sub modules and hierarchy present, they are flattened and a single netlist is observed.
+
 ![Screenshot from 2023-08-12 14-19-41](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/48fd5949-506b-4d34-add6-da5752827952)
 
 ![Screenshot from 2023-08-12 14-14-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f741e733-f646-4044-97bb-bdd2be1f530d)
