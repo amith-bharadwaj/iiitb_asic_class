@@ -227,9 +227,8 @@ write_verilog -noattr good_mux_netlist.v
 ### Lib Files 
 
 Lib file is a short form of Liberty Timing file. Liberty syntax is followed to write a .lib file. LIB file is an ASCII representation of timing and power parameter associated with cells inside the standard cell library of a particular technology node. Lib file is basically a timing model file which contains cell delay, cell transition time, setup and hold time requirement of the cell. So Lib file basically contains the timing and electrical characteristics of a cell or macros.The common part of Lib file contains
-1)Library name and technology name
-2)Units of time, power, voltage, current, resistance and capacitances.
-3)Value of operating condition (process, voltage and temperature): Max Min and Typical
-
+Markup : * Library name and technology name
+         * Units of time, power, voltage, current, resistance and capacitances.
+         * Value of operating condition (process, voltage and temperature): Max Min and Typical
 
 
