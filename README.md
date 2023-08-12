@@ -222,9 +222,10 @@ write_verilog -noattr good_mux_netlist.v
 4. https://teamvlsi.com
 </details>
 
-# DAY-2 
 <details>
 <summary>DAY-2</summary>
+    
+# DAY-2    
 ## Overview
 ### .Lib Files 
 
@@ -349,4 +350,4 @@ iverilog dff_syncres.v tb_dff_syncres.v
 gtkwave tb_dff_syncres.vcd
 ```
 ![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
-<details>
+</details>
