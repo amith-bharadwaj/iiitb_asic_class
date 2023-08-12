@@ -222,8 +222,10 @@ write_verilog -noattr good_mux_netlist.v
 4. https://teamvlsi.com
 </details>
 
+# DAY-2 
+<details>
+<summary>DAY-2</summary>
 ## Overview
-
 ### .Lib Files 
 
 Lib file is a short form of Liberty Timing file. Liberty syntax is followed to write a .lib file. LIB file is an ASCII representation of timing and power parameter associated with cells inside the standard cell library of a particular technology node. Lib file is basically a timing model file which contains cell delay, cell transition time, setup and hold time requirement of the cell. So Lib file basically contains the timing and electrical characteristics of a cell or macros.The common part of Lib file contains
@@ -347,5 +349,4 @@ iverilog dff_syncres.v tb_dff_syncres.v
 gtkwave tb_dff_syncres.vcd
 ```
 ![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
-
-
+<details>
