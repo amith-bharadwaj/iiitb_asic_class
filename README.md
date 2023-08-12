@@ -276,6 +276,7 @@ The synthesis of design from yosys sometimes uses a different logic gates than e
 
 ![Screenshot from 2023-08-12 13-41-21](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/d0976b73-91a6-4e23-9735-fd4f2e0e476f)
 ### Flat Synthesis
+
 Flat synthesis is an alternative approach to hierarchical synthesis in Very Large Scale Integration (VLSI) design.
 In flat synthesis, the entire design, including all its modules and sub-modules, is synthesized together in a single step. This approach can simplify certain aspects of the design process and may be suitable for smaller or less complex designs. However, it can also have limitations, especially as designs become larger and more complex.
 
@@ -291,6 +292,6 @@ show
 write_verilog -noattr multiple_modules_flat.v
 
 ```
-![Screenshot from 2023-08-12 14-13-23](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b7e2726a-6220-453d-8131-6f192c048e08)
+![Screenshot from 2023-08-12 14-14-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f741e733-f646-4044-97bb-bdd2be1f530d)
 
 
