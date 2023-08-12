@@ -275,6 +275,7 @@ The netlist generated is shown below
 The synthesis of design from yosys sometimes uses a different logic gates than expected design. This is because yosys chooses an optimized way to implement a logic. For example yosys implements nand logic instead of nor logic. The reason for why the nandlogic is optimal solution than nor logic is that,during the usage of cmos gate, the realization of OR gate contains stacked pmos gates for the design. The stacked pmos gate creates a delay which is a poor design. In the below image we can see the realisation of OR operation using stacked pmos logic.
 
 ![Screenshot from 2023-08-12 13-41-21](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/d0976b73-91a6-4e23-9735-fd4f2e0e476f)
-
-
+### Flat Synthesis
+Flat synthesis is an alternative approach to hierarchical synthesis in Very Large Scale Integration (VLSI) design.
+In flat synthesis, the entire design, including all its modules and sub-modules, is synthesized together in a single step. This approach can simplify certain aspects of the design process and may be suitable for smaller or less complex designs. However, it can also have limitations, especially as designs become larger and more complex.
 
