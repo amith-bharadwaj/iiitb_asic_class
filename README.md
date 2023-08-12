@@ -299,7 +299,7 @@ In this multiple_modules_flat.v file, we can see that there are no sub modules a
 
 ![Screenshot from 2023-08-12 14-14-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f741e733-f646-4044-97bb-bdd2be1f530d)
 
-## Synthesizing submodules
+### Synthesizing submodules
 
 Instead of synthesizing the submodule everytime, we synthesize the submodule one time and we replicate it number of times, and stich it together to form the design in the top module.Module level synthesis is preferred when we have multiple instances of same module.
 The command for synthesis of submodule is given below.This command is to be executed after reading liberty file and verilog files.
