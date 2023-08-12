@@ -235,7 +235,9 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 
 ![Screenshot (172)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/354d3c19-3ecf-4fec-8d6a-e055c84567ae)
 
-### Hierarchial synthesis and flat synthesis
+### Hierarchial synthesis
+
+
 
 #### Multiple modules and sub modules
 To understand and implement the concept of multiple modules and submodules, we use the below verilog file.
@@ -255,6 +257,10 @@ Follow the commands below for synthesis of multiple_modules.v
 yosys
 read_verilog multiple_modules.v
 synth -top multiple_modules.v
-
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show multiple_modules
+write_verilog multiple_modules_hier.v
 ```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e6e5e843-6175-41f4-81a1-e0a0d3729968)
+
 
