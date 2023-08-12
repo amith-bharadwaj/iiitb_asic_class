@@ -350,4 +350,16 @@ iverilog dff_syncres.v tb_dff_syncres.v
 gtkwave tb_dff_syncres.vcd
 ```
 ![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
+
+Here we can see the simulation of D-FlipFLop with asynchronous set performed with the help of iverilog and gtkwave softwares. The verilog code,commands and waveform are given below.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4a4825cf-09e6-48e0-8484-8265f11607d6)
+
+```
+iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7419ad22-b508-4ebe-97b6-1801de12036a)
+
 </details>
