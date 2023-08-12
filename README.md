@@ -233,4 +233,5 @@ Lib file is a short form of Liberty Timing file. Liberty syntax is followed to w
 
 Here we can look for the comparison between the cells in the .lib file. Wider cells will be faster, but area will be more. And also wider cells will consume more power.
 
+![Screenshot (172)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/354d3c19-3ecf-4fec-8d6a-e055c84567ae)
 
