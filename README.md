@@ -265,7 +265,7 @@ read_verilog multiple_modules.v
 synth -top multiple_modules
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 show multiple_modules
-write_verilog multiple_modules_hier.v
+write_verilog -noattr multiple_modules_hier.v
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e6e5e843-6175-41f4-81a1-e0a0d3729968)
 The netlist generated is shown below
@@ -278,4 +278,19 @@ The synthesis of design from yosys sometimes uses a different logic gates than e
 ### Flat Synthesis
 Flat synthesis is an alternative approach to hierarchical synthesis in Very Large Scale Integration (VLSI) design.
 In flat synthesis, the entire design, including all its modules and sub-modules, is synthesized together in a single step. This approach can simplify certain aspects of the design process and may be suitable for smaller or less complex designs. However, it can also have limitations, especially as designs become larger and more complex.
+
+Follow the below commands to flatten and see the output
+
+```
+yosys
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+flatten
+show
+write_verilog -noattr multiple_modules_flat.v
+
+```
+![Screenshot from 2023-08-12 14-09-18](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8063c99a-d3fc-4e80-b460-291c3724b945)
+
 
