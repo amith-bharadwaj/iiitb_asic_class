@@ -217,6 +217,10 @@ write_verilog -noattr good_mux_netlist.v
 ```
 ![Screenshot from 2023-08-08 22-02-05](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4c428b4a-641d-4eb7-b4de-65ba97f369d7)
 
-
+## References
+1)https://yosyshq.net/
+2)https://www.vsdiat.com/
+3)https://github.com/kunalg123/vsdflow
+4)https://ngspice.sourceforge.io/
 </details>  
 
