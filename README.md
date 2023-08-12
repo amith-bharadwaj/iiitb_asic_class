@@ -243,7 +243,7 @@ In this verilog file,the submodules are instantiated under main module. In the h
 
 | verilog example                           | logic circuit                           |
 | ----------------------------------- | ----------------------------------- |
-| ![WhatsApp Image 2023-08-12 at 11 58 11 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6bfb555e-f3c4-40bf-af24-18cdc1f37621) | ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b5e6d663-84eb-4100-8943-a0c6a3a58693) |
+| ![WhatsApp Image 2023-08-12 at 11 58 11 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6bfb555e-f3c4-40bf-af24-18cdc1f37621) | ![WhatsApp Image 2023-08-12 at 12 11 07 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/55a13d5f-3753-4be5-bd44-19b7ef6976df)|
 
 
 
