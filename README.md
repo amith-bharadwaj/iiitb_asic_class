@@ -272,5 +272,8 @@ The netlist generated is shown below
 ![Screenshot from 2023-08-12 13-07-53](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/08b547a4-8883-479d-98d9-edd7e0fd6504)
 ![Screenshot from 2023-08-12 13-08-11](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8f18f88c-effb-4225-986c-876efc26c1ff)
 
+The synthesis of design from yosys sometimes uses a different logic gates than expected design. This is because yosys chooses an optimized way to implement a logic. For example yosys implements nand logic instead of nor logic. The reason for why the nandlogic is optimal solution than nor logic is that,during the usage of cmos gate, the realization of OR gate contains stacked pmos gates for the design. The stacked pmos gate creates a delay which is a poor design. In the below image we can see the realisation of OR operation using NOR logic.
+
+
 
 
