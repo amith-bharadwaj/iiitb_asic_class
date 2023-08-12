@@ -262,6 +262,7 @@ show multiple_modules
 write_verilog multiple_modules_hier.v
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e6e5e843-6175-41f4-81a1-e0a0d3729968)
+The netlist generated is shown below
 ![Screenshot from 2023-08-12 13-07-53](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/08b547a4-8883-479d-98d9-edd7e0fd6504)
 ![Screenshot from 2023-08-12 13-08-11](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8f18f88c-effb-4225-986c-876efc26c1ff)
 
