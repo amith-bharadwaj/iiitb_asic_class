@@ -327,6 +327,7 @@ iverilog dff_asyncres.v tb_dff_asyncres.v
 ./a.out
 gtkwave tb_dff_asyncres.vcd
 ```
+
 ![Screenshot from 2023-08-12 20-53-46](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4044f6f6-fe52-47df-88d8-4c17d053a941)
 
 
