@@ -241,9 +241,9 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 In this verilog file,the submodules are instantiated under main module. In the handwritten image below we can see how the instantiation is done.
 
 
-| verilog example                           | logic circuit                           |
+| verilog example | logic circuit |
 | ------------------------------------------------------ | ------------------------------------- |
-|![Screenshot from 2023-08-12 12-08-10](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/89f01798-78b2-42c4-ad27-b3ac50488591)            | ![WhatsApp Image 2023-08-12 at 12 11 07 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/55a13d5f-3753-4be5-bd44-19b7ef6976df)|
+|![Screenshot from 2023-08-12 12-08-10](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/89f01798-78b2-42c4-ad27-b3ac50488591)| ![WhatsApp Image 2023-08-12 at 12 11 07 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/55a13d5f-3753-4be5-bd44-19b7ef6976df)|
 
 
 
