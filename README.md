@@ -238,7 +238,7 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 ### Hierarchial synthesis and flat synthesis
 
 #### Multiple modules and sub modules
-In this verilog file,the submodules are instantiated under main module. In the handwritten image below we can see how the instantiation is done.
+In this verilog file,the submodules are instantiated under main module. In the handwritten image below we can see how the instantiation is done.Here Sub module 1 is an AND logic gate and Sub module 2 is an OR logic Gate.
 
 
 | verilog example | logic circuit |
