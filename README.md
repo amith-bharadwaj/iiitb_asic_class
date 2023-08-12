@@ -262,7 +262,7 @@ Follow the commands below for synthesis of multiple_modules.v
 ```
 yosys
 read_verilog multiple_modules.v
-synth -top multiple_modules.v
+synth -top multiple_modules
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 show multiple_modules
 write_verilog multiple_modules_hier.v
