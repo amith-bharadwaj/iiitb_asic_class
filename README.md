@@ -319,7 +319,10 @@ Lets take an example of combinational logic circuit where a 2 input AND gate's o
 ![WhatsApp Image 2023-08-12 at 8 30 26 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7f3a9bc0-fee5-42c9-9f2d-bf6ec095af14)
 
 Here we can see a  verilog code for a D-FlipFlop having asynchronous reset.This means that, the flip flop doesnt have to wait for the clock to perform the reset operation.In the verilog code given below, we can observe that the sensitivity list contains both the clock and the asynchronous reset, so whenever any of the 2 signals have transition, the reset takes place.
-![Screenshot from 2023-08-12 20-35-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4a194509-842c-452c-ad41-cff488031a6b)
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/bb5d9f39-9ad1-44c6-bc2f-b4d86d68f20d)
+
+
 Here we can see the simulation of D-FlipFLop with asynchronous reset performed with the help of iverilog and gtkwave softwares. The commands for simulation are given below
 
 ```
@@ -332,7 +335,6 @@ gtkwave tb_dff_asyncres.vcd
 
 
 For a synchronous reset D-Flipflop, the flipflop will wait for the next clock to arrive for performing the reset operation.The behaviour can be observed in the verilog code given below.
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/bb5d9f39-9ad1-44c6-bc2f-b4d86d68f20d)
 
 Here we can see the simulation of D-FlipFLop with synchronous reset performed with the help of iverilog and gtkwave softwares. The commands for simulation are given below
 
