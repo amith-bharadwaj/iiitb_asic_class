@@ -291,6 +291,6 @@ show
 write_verilog -noattr multiple_modules_flat.v
 
 ```
-![Screenshot from 2023-08-12 14-09-18](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8063c99a-d3fc-4e80-b460-291c3724b945)
+![Screenshot from 2023-08-12 14-13-23](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b7e2726a-6220-453d-8131-6f192c048e08)
 
 
