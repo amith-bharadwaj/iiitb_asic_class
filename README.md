@@ -336,6 +336,9 @@ gtkwave tb_dff_asyncres.vcd
 
 For a synchronous reset D-Flipflop, the flipflop will wait for the next clock to arrive for performing the reset operation.The behaviour can be observed in the verilog code given below.
 
+![Screenshot from 2023-08-12 21-10-49](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a8dd9fdc-b80a-4705-8aaa-48850d2be987)
+
+
 Here we can see the simulation of D-FlipFLop with synchronous reset performed with the help of iverilog and gtkwave softwares. The commands for simulation are given below
 
 ```
