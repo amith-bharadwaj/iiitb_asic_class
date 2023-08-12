@@ -318,4 +318,8 @@ Lets take an example of combinational logic circuit where a 2 input AND gate's o
 
 ![WhatsApp Image 2023-08-12 at 8 30 26 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7f3a9bc0-fee5-42c9-9f2d-bf6ec095af14)
 
+Here we can see a  verilog code for a D-FlipFlop having asynchronous reset.This means that, the flip flop doesnt have to wait for the clock to reset.
+
+![Screenshot from 2023-08-12 20-35-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4a194509-842c-452c-ad41-cff488031a6b)
+
 
