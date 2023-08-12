@@ -322,17 +322,26 @@ Here we can see a  verilog code for a D-FlipFlop having asynchronous reset.This 
 
 ![Screenshot from 2023-08-12 20-35-24](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4a194509-842c-452c-ad41-cff488031a6b)
 
-Here we can see the simulation of D-FlipFLop with asynchronous reset performed with iverilog and gtkwave.
+Here we can see the simulation of D-FlipFLop with asynchronous reset performed with the help of iverilog and gtkwave softwares. The commands for simulation are given below
 
-
-
-
+```
+iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4340cadf-e990-400f-a3ae-e9956776c298)
 
 For a synchronous reset D-Flipflop, the flipflop will wait for the next clock to arrive for performing the reset operation.The behaviour can be observed in the verilog code given below.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/072d471c-b8c4-40b3-8f63-19fee9948d03)
 
+Here we can see the simulation of D-FlipFLop with synchronous reset performed with the help of iverilog and gtkwave softwares. The commands for simulation are given below
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4340cadf-e990-400f-a3ae-e9956776c298)
+```
+iverilog dff_syncres.v tb_dff_syncres.v
+./a.out
+gtkwave tb_dff_syncres.vcd
+```
+![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
 
-![Screenshot from 2023-08-12 20-53-46](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e2b1fa21-b6df-4ab2-8e59-7d2a4b5f8ff2)
+
