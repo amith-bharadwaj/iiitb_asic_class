@@ -1,11 +1,9 @@
 # iiitb_ASIC_Class
-## Week-1
-
 <details>
 <summary>DAY-1</summary>
 <br>
 
-## DAY-1 Installation of Softwares
+## DAY-0 Installation of Softwares
 
 ### Yosys Installation
 
@@ -167,7 +165,7 @@ make test
 <details>
 <summary>DAY-2</summary>
     
-## DAY-2 Introduction to verilog RTL Design and Synthesis
+## DAY-1 Introduction to verilog RTL Design and Synthesis
 The first step is to clone the necessary lab files from the given github repository to a directory named VLSI.
 
 ```
