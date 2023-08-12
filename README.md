@@ -309,3 +309,13 @@ show
 ```
 In the below image we can see the implementation of single submodule.
 ![Screenshot from 2023-08-12 14-29-45](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ac8addf6-2626-44b0-9155-f9ca0827ba1d)
+
+### Various Flop Coding Styles and Optimization
+
+#### Why Flops
+
+Lets take an example of combinational logic circuit where a 2 input AND gate's output is given to one terminal of 2 input OR gate. The overall output is "Y" and the intermediate output at the AND gate is "i". There  will be propagation delay at the overall output. Because of the delay, the output will have a glitch.let us consider "a" and "b" are having a transition from 0 to 1 and "c" is having transition from 1 to 0.Let us take the delay of the AND gate as 2ns and delay of the OR gate as 1 ns.The output will be as below.For a complex circuit containing more number of combinational circuits, the output will not be stable, it will be having the glitch most of the time.We have to avoid this event,this is where flip flops help us. A D-flipflop synchronized with the clock functions in a manner that, the output of the Flop will change only at the edge of the clock signal.Even though input is having a glitch, the output will be stable.
+
+![WhatsApp Image 2023-08-12 at 8 30 26 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7f3a9bc0-fee5-42c9-9f2d-bf6ec095af14)
+
+
