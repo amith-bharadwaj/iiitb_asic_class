@@ -235,3 +235,5 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 
 ![Screenshot (172)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/354d3c19-3ecf-4fec-8d6a-e055c84567ae)
 
+### Hierarchial synthesis and flat synthesis
+
