@@ -240,8 +240,7 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 #### Multiple modules and sub modules
 In this verilog file,the submodules are instantiated under main module. In the handwritten image below we can see how the instantiation is done.
 
-![Screenshot from 2023-08-12 11-59-57](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2ba48a88-e294-4cea-b9fd-069f38a09e13)
-![WhatsApp Image 2023-08-12 at 11 58 11 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6bfb555e-f3c4-40bf-af24-18cdc1f37621)
+| ![Screenshot from 2023-08-12 11-59-57](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2ba48a88-e294-4cea-b9fd-069f38a09e13) | ![WhatsApp Image 2023-08-12 at 11 58 11 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6bfb555e-f3c4-40bf-af24-18cdc1f37621) |
 
 
 
