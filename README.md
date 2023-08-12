@@ -1,6 +1,6 @@
 # iiitb_ASIC_Class
 <details>
-<summary>DAY-1</summary>
+<summary>DAY-0</summary>
 <br>
 
 ## DAY-0 Installation of Softwares
@@ -163,7 +163,7 @@ make test
 </details>
 
 <details>
-<summary>DAY-2</summary>
+<summary>DAY-1</summary>
     
 ## DAY-1 Introduction to verilog RTL Design and Synthesis
 The first step is to clone the necessary lab files from the given github repository to a directory named VLSI.
