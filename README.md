@@ -238,6 +238,10 @@ Here we can look for the comparison between the cells in the .lib file. Wider ce
 ### Hierarchial synthesis and flat synthesis
 
 #### Multiple modules and sub modules
+To understand and implement the concept of multiple modules and submodules, we use the below verilog file.
+
+https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop/blob/main/verilog_files/multiple_modules.v
+
 In this verilog file,the submodules are instantiated under main module. In the handwritten image below we can see how the instantiation is done.Here Sub module 1 is an AND logic gate and Sub module 2 is an OR logic Gate.
 
 
@@ -245,6 +249,12 @@ In this verilog file,the submodules are instantiated under main module. In the h
 |------------------------------------------------------ | ------------------------------------- |
 |![Screenshot from 2023-08-12 12-17-34](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8125a1c7-e2bd-4d48-ab36-d7edf2298288)|![Screenshot from 2023-08-12 12-20-10](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/fe0a9628-2ce4-4077-b7d7-b644e898f42f)|
 
+Follow the commands below for synthesis of multiple_modules.v
 
+```
+yosys
+read_verilog multiple_modules.v
+synth -top multiple_modules.v
 
+```
 
