@@ -1,8 +1,10 @@
-![Screenshot from 2023-08-13 13-57-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/177b62f4-63d5-4851-81d4-c14d6ff6326d)# iiitb_ASIC_Class
+
 <details>
 <summary>DAY-0</summary>
 <br>
-
+    
+# iiitb_ASIC_Class
+    
 ## DAY-0 Installation of Softwares
 
 ### Yosys Installation
@@ -10,7 +12,7 @@
 **Steps to install Yosys**
 
 ```
-git clone https://github.com/YosysHQ/yosys.git
+git clone https://github.com/YosysHQ/yosys.gi
 cd yosys 
 sudo apt install make (If make is not installed please install it) 
 sudo apt-get install build-essential clang bison flex \
@@ -385,9 +387,6 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 ![Screenshot from 2023-08-13 13-57-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2ec625c7-a710-4fd0-8612-215d545f98cd)
-
-
-
 
 
 </details>
