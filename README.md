@@ -341,6 +341,7 @@ gtkwave tb_dff_asyncres.vcd
 
 The synthesis of D-FlipFLop with asynchronous reset is performed by yosys with the following commands and the generated block diagram can be seen below.
 ```
+yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 read_verilog ../verilog_files/dff_asyncres.v
 synth -top dff_asyncres
@@ -368,6 +369,7 @@ gtkwave tb_dff_syncres.vcd
 
 The synthesis of D-FlipFLop with synchronous reset is performed by yosys with the following commands and the generated block diagram can be seen below.
 ```
+yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 read_verilog ../verilog_files/dff_syncres.v
 synth -top dff_syncres
@@ -393,6 +395,7 @@ gtkwave tb_dff_async_set.vcd
 The synthesis of D-FlipFLop with asynchronous set is performed by yosys with the following commands and the generated block diagram can be seen below.
 
 ```
+yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 read_verilog ../verilog_files/dff_async_set.v
 synth -top dff_async_set
@@ -468,6 +471,41 @@ In the logic diagram below, there is no possibility for Q to become 1,it is alwa
 
 3. **Retiming**: The goal of retiming is to balance the pipeline stages of a circuit to achieve better timing, reduced delay, and improved overall performance. During this optimization technique we make use of the positive slack to reduce the overall circuit delay.
 
+Here the opt_check verilog file is synthesized and checked for optimization.
+
+![Screenshot from 2023-08-13 22-59-07](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/546d4c3f-5cd5-4b0c-b998-debfd4a0ecce)
+
+
+Follow the below commands to synthesize opt_check1. The synthesized optimized design can be seen below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/opt_check.v
+synth -top opt_check
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![Screenshot from 2023-08-13 23-10-50](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b71ed927-efe9-46f6-9bfd-dab0ef46362a)
+
+Here the opt_check2 verilog file is synthesized and checked for optimization.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/c04dc177-c8c9-4259-8ffd-93e8c61a1bc0)
+
+
+Follow the below commands to synthesize opt_check1. The synthesized optimized design can be seen below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/opt_check.v
+synth -top opt_check
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![Screenshot from 2023-08-13 23-13-08](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/479a8cf3-8133-4b56-b069-1a5c8d225071)
 
 
 </details>
