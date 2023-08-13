@@ -402,5 +402,32 @@ show
 ```
 ![Screenshot from 2023-08-13 13-57-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2ec625c7-a710-4fd0-8612-215d545f98cd)
 
+### Optimization
+
+Here below we can see the synthesis of a multiplier without the usage of hardware as we dont need any hardware for multiplying a number with an exponent of 2.
+The expected result can be obtained by just mapping the inputs.
+The verilog code for this multiplier is shown below:
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0256d809-8444-4913-a77c-b35e7eef3be8)
+The block diagram obtained after the synthesis of this multiplier is shown below:
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4995ef5d-95ec-4b04-a8e3-14d310393355)
+The generated netlist is:
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/33d62b45-036d-4b57-9296-f4ed4aa3b626)
+
+Let us take another example of an multiplier where a 3 bit number "a" is multiplied with decimal 9 to obtain a 6 bit output "y".
+This multiplication can be performed by mapping the input bits to output and replicating it without the usage of hardware.
+![WhatsApp Image 2023-08-13 at 3 50 47 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f978c368-b7b1-48e9-8837-2c3cc755ef33)
+The blockdiagram after synthesis is:
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4da40813-7bbd-4bcf-ba20-e0e7c1cc0e5e)
+The net list generated is:
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/88ecadf1-c0b6-44b8-bc57-7f4871ed0b64)
+These are custom optimizations which happens during synthesis,the logic is implemented without the help of hardware and it is replaced by just re-wiring the signals.
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/24c197ca-b40b-401f-9c44-5609b8f7faa4)
+
+
+
+
+
+
+
 
 </details>
