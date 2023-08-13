@@ -1,4 +1,4 @@
-# iiitb_ASIC_Class
+![Screenshot from 2023-08-13 13-57-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/177b62f4-63d5-4851-81d4-c14d6ff6326d)# iiitb_ASIC_Class
 <details>
 <summary>DAY-0</summary>
 <br>
@@ -336,6 +336,16 @@ gtkwave tb_dff_asyncres.vcd
 
 ![Screenshot from 2023-08-12 20-53-46](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4044f6f6-fe52-47df-88d8-4c17d053a941)
 
+The synthesis of D-FlipFLop with asynchronous reset is performed by yosys with the following commands and the generated block diagram can be seen below.
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_asyncres.v
+synth -top dff_asyncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
 
 For a synchronous reset D-Flipflop, the flipflop will wait for the next clock to arrive for performing the reset operation.The behaviour can be observed in the verilog code given below.
 
@@ -351,6 +361,8 @@ gtkwave tb_dff_syncres.vcd
 ```
 ![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
 
+
+
 Here we can see the simulation of D-FlipFLop with asynchronous set performed with the help of iverilog and gtkwave softwares. The verilog code,commands and waveform are given below.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4a4825cf-09e6-48e0-8484-8265f11607d6)
@@ -361,5 +373,21 @@ iverilog dff_async_set.v tb_dff_async_set.v
 gtkwave tb_dff_async_set.vcd
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7419ad22-b508-4ebe-97b6-1801de12036a)
+
+The synthesis of D-FlipFLop with asynchronous set is performed by yosys with the following commands and the generated block diagram can be seen below.
+
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_async_set.v
+synth -top dff_async_set
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![Screenshot from 2023-08-13 13-57-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2ec625c7-a710-4fd0-8612-215d545f98cd)
+
+
+
+
 
 </details>
