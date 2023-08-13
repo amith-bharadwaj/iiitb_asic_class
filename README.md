@@ -439,14 +439,21 @@ These are custom optimizations which happens during synthesis,the logic is imple
     
 <summary>DAY-3</summary>
 
-# DAY-2 
+# DAY-3 
 
 ## Overview
 
 ### Combinational Logic Optimisation
+
+Generally, the circuit is constrained to a minimum chip area meeting a predefined response delay. The goal of logic optimization of a given circuit is to obtain the smallest logic circuit that evaluates to the same values as the original one.Usually, the smaller circuit with the same function is cheaper,takes less space,consumes less power, has shorter latency, and minimizes risks of unexpected cross-talk, hazard of delayed signal processing, and other issues present at the nano-scale level of metallic structures on an integrated circuit. 
+Optimization also means
 1.Squeezing the logic to get most optimised design for Area and power savings.
 2.Constant Propagation
+![Screenshot (174)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/512e03d7-93f9-490b-920a-c99168b4c176)
 
+Here is an example for optimization.Synthesis tool does this type of boolean logic optimization to get the most optimized logic.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/65e25a04-b212-4e16-88ef-213d08924c77)
 
 </details>
 
