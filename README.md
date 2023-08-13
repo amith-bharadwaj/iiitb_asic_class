@@ -449,11 +449,21 @@ Generally, the circuit is constrained to a minimum chip area meeting a predefine
 Optimization also means
 1.Squeezing the logic to get most optimised design for Area and power savings.
 2.Constant Propagation
+
 ![Screenshot (174)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/512e03d7-93f9-490b-920a-c99168b4c176)
 
 Here is an example for optimization.Synthesis tool does this type of boolean logic optimization to get the most optimized logic.
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/65e25a04-b212-4e16-88ef-213d08924c77)
+### Sequential constant
+
+In the logic diagram below, there is no possibility for Q to become 1,it is always set to 0.So the output Y is always 1.It doesnt require any operation to be performed. This is an example for Sequential Constant.
+
+![WhatsApp Image 2023-08-13 at 10 25 06 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ded0d3ff-5a7d-4e8a-a9d2-8e6c2b50173f)
+
+**State optimisation:** Optimization of unused states
+**Cloning**: 
+**Retiming**:
+
 
 </details>
 
