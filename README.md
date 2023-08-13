@@ -435,6 +435,22 @@ These are custom optimizations which happens during synthesis,the logic is imple
 
 </details>
 
+<details>
+    
+<summary>DAY-3</summary>
+
+# DAY-2 
+
+## Overview
+
+### Combinational Logic Optimisation
+1.Squeezing the logic to get most optimised design for Area and power savings.
+2.Constant Propagation
+
+
+</details>
+
+
 ## References
 
 1. https://yosyshq.net/
