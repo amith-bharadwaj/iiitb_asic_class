@@ -348,6 +348,8 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 
 ```
+![Screenshot from 2023-08-13 13-47-03](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/28890e80-2499-4b73-80f8-e5caeada4240)
+
 
 For a synchronous reset D-Flipflop, the flipflop will wait for the next clock to arrive for performing the reset operation.The behaviour can be observed in the verilog code given below.
 
