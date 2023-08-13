@@ -434,7 +434,9 @@ The net list generated is:
 These are custom optimizations which happens during synthesis,the logic is implemented without the help of hardware and it is replaced by just re-wiring the signals.
 
 </details>
+
 ## References
+
 1. https://yosyshq.net/
 2. https://www.vsdiat.com/
 3. https://github.com/kunalg123/vsdflow
