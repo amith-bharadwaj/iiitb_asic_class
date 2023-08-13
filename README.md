@@ -228,7 +228,8 @@ write_verilog -noattr good_mux_netlist.v
 <details>
 <summary>DAY-2</summary>
     
-# DAY-2 Timing libs, Hierarchial vs Flat synthesis and efficient Flop coding styles.   
+# DAY-2 
+
 ## Overview
 
 In this lab practice, we go through the fundamentals of liberty files, a keen understanding of Hierarchial synthesis and Flat synthesis ,efficient Flop coding styles and the optimizations.
