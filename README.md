@@ -232,7 +232,7 @@ write_verilog -noattr good_mux_netlist.v
 
 ## Overview
 
-In this lab practice, we go through the fundamentals of liberty files, a keen understanding of Hierarchial synthesis and Flat synthesis ,efficient Flop coding styles and the optimizations.
+In this lab practice, we go through the fundamentals of liberty files,Hierarchial synthesis,Flat synthesis ,efficient Flop coding styles and optimizations.
 
 ### .Lib Files 
 
