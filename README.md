@@ -460,9 +460,10 @@ In the logic diagram below, there is no possibility for Q to become 1,it is alwa
 
 ![WhatsApp Image 2023-08-13 at 10 25 06 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ded0d3ff-5a7d-4e8a-a9d2-8e6c2b50173f)
 
-**State optimisation:** Optimization of unused states
+**State optimisation:** Optimization of unused states.
 **Cloning**:Cloning refers to the process of duplicating a portion of a circuit to create multiple copies, which can operate concurrently and independently. Cloning is a design optimization technique that can have various benefits, including performance improvement, power reduction, and area savings. 
-**Retiming**:
+**Retiming**: The goal of retiming is to balance the pipeline stages of a circuit to achieve better timing, reduced delay, and improved overall performance. During this optimization technique we make use of the positive slack to reduce the overall circuit delay.
+
 
 
 </details>
