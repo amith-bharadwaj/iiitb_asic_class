@@ -475,6 +475,7 @@ Here the opt_check verilog file is synthesized and checked for optimization.
 
 ![Screenshot from 2023-08-13 22-59-07](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/546d4c3f-5cd5-4b0c-b998-debfd4a0ecce)
 
+### Synthesis of combinational logic optimisations 
 
 Follow the below commands to synthesize opt_check. The synthesized optimized design can be seen below.
 
@@ -560,6 +561,62 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/9e1591ee-946e-4fcb-b726-35425c2c9d7f)
+
+Here the multiple_module_opt2.v verilog file is synthesized and checked for optimization.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/22175a58-259e-46e4-ac37-ced713d3ef3f)
+
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/multiple_module_opt2.v
+synth -top multiple_module_opt2
+flatten
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ed0cea13-e020-41ca-bc2c-d5950292554e)
+
+### Simulation and Synthesis of Sequential logic optimisations 
+
+Here below we can observe the simulation of dff_const1.v. Here the logic optimisation is not possible because, the output is synchronized with the clock therefore even if the reset changes its value , the flip flop will wait until the next edge of the clock pulse arrives.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ae69fe18-5f0e-411a-8ada-3fcb3c76dc08)
+
+Follow the below commands to synthesize and view the block diagram generated.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_const1.v
+synth -top dff_const1
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/11c216d2-c8aa-4c01-9701-02cd5a4680aa)
+
+
+Here below we can observe the simulation of dff_const2.v.Here the logic optimisation can be done because, no matter what the input is, the output of the circuit will be 1.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/26965c39-74c3-4403-a0e9-24a9188d7080)
+
+Follow the below commands to synthesize and view the block diagram generated.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_const2.v
+synth -top dff_const2
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+In the synthesized logic, we can observe that there are no flops used for the design, because the logic is optimized to making output high for the whole time.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/bf5d0bb3-2113-4cce-90f0-d209b0fcab24)
 
 
 </details>
