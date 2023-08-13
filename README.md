@@ -230,6 +230,9 @@ write_verilog -noattr good_mux_netlist.v
     
 # DAY-2 Timing libs, Hierarchial vs Flat synthesis and efficient Flop coding styles.   
 ## Overview
+
+In this lab practice, we go through the fundamentals of liberty files, a keen understanding of Hierarchial synthesis and Flat synthesis ,efficient Flop coding styles and the optimizations.
+
 ### .Lib Files 
 
 Lib file is a short form of Liberty Timing file. Liberty syntax is followed to write a .lib file. LIB file is an ASCII representation of timing and power parameter associated with cells inside the standard cell library of a particular technology node. Lib file is basically a timing model file which contains cell delay, cell transition time, setup and hold time requirement of the cell. So Lib file basically contains the timing and electrical characteristics of a cell or macros.The common part of Lib file contains
@@ -281,6 +284,7 @@ The netlist generated is shown below
 The synthesis of design from yosys sometimes uses a different logic gates than expected design. This is because yosys chooses an optimized way to implement a logic. For example yosys implements nand logic instead of nor logic. The reason for why the nandlogic is optimal solution than nor logic is that,during the usage of cmos gate, the realization of OR gate contains stacked pmos gates for the design. The stacked pmos gate creates a delay which is a poor design. In the below image we can see the realisation of OR operation using stacked pmos logic.
 
 ![Screenshot from 2023-08-12 13-41-21](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/d0976b73-91a6-4e23-9735-fd4f2e0e476f)
+
 ### Flat Synthesis
 
 Flat synthesis is an alternative approach to hierarchical synthesis in Very Large Scale Integration (VLSI) design.
@@ -404,23 +408,35 @@ show
 
 ### Optimization
 
-Here below we can see the synthesis of a multiplier without the usage of hardware as we dont need any hardware for multiplying a number with an exponent of 2.
-The expected result can be obtained by just mapping the inputs.
+Here below we can see the synthesis of a multiplier without the usage of hardware as we dont need any hardware for multiplying a number with an exponent of 2.The expected result can be obtained by just mapping the inputs.
+
 The verilog code for this multiplier is shown below:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0256d809-8444-4913-a77c-b35e7eef3be8)
+
 The block diagram obtained after the synthesis of this multiplier is shown below:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4995ef5d-95ec-4b04-a8e3-14d310393355)
+
 The generated netlist is:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/33d62b45-036d-4b57-9296-f4ed4aa3b626)
 
 Let us take another example of an multiplier where a 3 bit number "a" is multiplied with decimal 9 to obtain a 6 bit output "y".
 This multiplication can be performed by mapping the input bits to output and replicating it without the usage of hardware.
+
 ![WhatsApp Image 2023-08-13 at 3 50 47 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f978c368-b7b1-48e9-8837-2c3cc755ef33)
+
 The blockdiagram after synthesis is:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/4da40813-7bbd-4bcf-ba20-e0e7c1cc0e5e)
+
 The net list generated is:
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/88ecadf1-c0b6-44b8-bc57-7f4871ed0b64)
+
 These are custom optimizations which happens during synthesis,the logic is implemented without the help of hardware and it is replaced by just re-wiring the signals.
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/24c197ca-b40b-401f-9c44-5609b8f7faa4)
 
 
