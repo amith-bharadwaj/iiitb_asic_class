@@ -1,8 +1,6 @@
 
 <details>
     
- # iiitb_ASIC_Class
-    
 <summary>DAY-0</summary>
 <br>
     
@@ -368,6 +366,17 @@ gtkwave tb_dff_syncres.vcd
 ```
 ![Screenshot from 2023-08-12 21-06-20](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce033d77-eb83-47dd-9d27-b3702e38f7df)
 
+The synthesis of D-FlipFLop with synchronous reset is performed by yosys with the following commands and the generated block diagram can be seen below.
+```
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_syncres.v
+synth -top dff_syncres
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/485f22f1-21d0-4cb5-b4db-650c7c586027)
 
 
 Here we can see the simulation of D-FlipFLop with asynchronous set performed with the help of iverilog and gtkwave softwares. The verilog code,commands and waveform are given below.
