@@ -228,7 +228,7 @@ write_verilog -noattr good_mux_netlist.v
 <details>
 <summary>DAY-2</summary>
     
-# DAY-2    
+# DAY-2 Timing libs, Hierarchial vs Flat synthesis and efficient Flop coding styles.   
 ## Overview
 ### .Lib Files 
 
