@@ -476,7 +476,7 @@ Here the opt_check verilog file is synthesized and checked for optimization.
 ![Screenshot from 2023-08-13 22-59-07](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/546d4c3f-5cd5-4b0c-b998-debfd4a0ecce)
 
 
-Follow the below commands to synthesize opt_check1. The synthesized optimized design can be seen below.
+Follow the below commands to synthesize opt_check. The synthesized optimized design can be seen below.
 
 ```
 yosys
@@ -494,18 +494,72 @@ Here the opt_check2 verilog file is synthesized and checked for optimization.
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/c04dc177-c8c9-4259-8ffd-93e8c61a1bc0)
 
 
-Follow the below commands to synthesize opt_check1. The synthesized optimized design can be seen below.
+Follow the below commands to synthesize opt_check2. The synthesized optimized design can be seen below.
 
 ```
 yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
-read_verilog ../verilog_files/opt_check.v
-synth -top opt_check
+read_verilog ../verilog_files/opt_check2.v
+synth -top opt_check2
 opt_clean -purge
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 show
 ```
 ![Screenshot from 2023-08-13 23-13-08](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/479a8cf3-8133-4b56-b069-1a5c8d225071)
+
+Here the opt_check3 verilog file is synthesized and checked for optimization.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/767fea47-9cab-4dd2-8e0b-e23cb8f13f1e)
+
+Follow the below commands to synthesize opt_check3. The synthesized optimized design can be seen below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/opt_check3.v
+synth -top opt_check3
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![Screenshot from 2023-08-13 23-27-00](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/c6f856a0-20b2-4edb-8c4a-6478ecb4386f)
+
+
+Here the opt_check4 verilog file is synthesized and checked for optimization.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/380d9f6e-ea5a-434f-b0b9-c544c982d592)
+
+
+Follow the below commands to synthesize opt_check4. The synthesized optimized design can be seen below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/opt_check4.v
+synth -top opt_check4
+opt_clean -purge
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/58cc76ea-970f-47ae-b916-e805cb9f5233)
+
+Here the multiple_module_opt.v verilog file is synthesized and checked for optimization.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/18b277fa-84eb-4225-9073-76fa45273967)
+
+Follow the below commands to synthesize multiple_module_opt.v. The synthesized optimized design can be seen below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/multiple_module_opt.v
+synth -top multiple_module_opt
+opt_clean -purge
+flatten
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/9e1591ee-946e-4fcb-b726-35425c2c9d7f)
 
 
 </details>
