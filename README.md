@@ -1,5 +1,4 @@
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2fdf9238-53fa-46d3-ab8a-897683bebb69)
-<details>
+
     
 <summary>DAY-0</summary>
 <br>
