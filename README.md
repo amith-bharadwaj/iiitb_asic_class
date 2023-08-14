@@ -888,6 +888,7 @@ Here we can clearly see the mismatch.Therefore it is advisable to use the blocki
 
 The if condition gets the highest priority and the else condition gets the lowest priority during the execution.The hardware circuit created when these conditional statements are used can be seen below.
 
+![WhatsApp Image 2023-08-14 at 5 36 41 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/05946a53-85bb-4bee-9d88-ece7e0082d14)
 
 
 ### Danger/Caution with if condition
