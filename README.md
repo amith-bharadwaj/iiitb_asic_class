@@ -878,6 +878,17 @@ Here we can clearly see the mismatch.Therefore it is advisable to use the blocki
 
 </details>
 
+<details>
+    
+<summary>DAY-5</summary>
+
+## Overview
+
+### Danger/Caution with if condition
+1. **Inferred Latches:** This is created due to incomplete "if" statements.
+
+</details>
+
 ## References
 
 1. https://yosyshq.net/
