@@ -618,8 +618,75 @@ In the synthesized logic, we can observe that there are no flops used for the de
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/bf5d0bb3-2113-4cce-90f0-d209b0fcab24)
 
+Here let us take an example of dff_const3.v. The verilog code , logic circuit and the expected waveform can be seen below. Here in the waveform,Q will go low for one period of clock cycle and remains high for the rest of the time period.Therefore optimisation cannot be done and both the flipflops will be present in the synthesised design.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f5606c50-4d9b-434c-be78-f90a03cc72e5)
+
+The waveform generated with the help of iverilog and gtkwave can be seen below.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/98c5ad98-c36b-4a71-add8-b4263d53db5d)
+
+Follow the below commands to synthesize and view the block diagram generated.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_const3.v
+synth -top dff_const3
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/49d2ec8e-075b-488f-9447-c2868259210a)
+
+Here below we can observe the verilog code and simulation of dff_const4.v.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/442fbb7c-4a42-42fe-8720-fb4183583f20)
+
+The waveform generated with the help of iverilog and gtkwave can be seen below.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/54b700fd-24c2-4b01-a7c6-c66259e67f7a)
+
+Here the outputs are constant high for any value of input, therefore optimisation can be done and the logic can be implemented without the use of hardware. Let us observe the same during the synthesis.Follow the commands below for the synthesis of the design.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_const4.v
+synth -top dff_const4
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/84840547-1cee-46da-a78a-6a580640f29b)
+
+Here below we can observe the verilog code and simulation of dff_const5.v.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/1b6fc90c-8273-455d-996d-8664c9a6d91e)
+
+The waveform generated with the help of iverilog and gtkwave can be seen below.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/c9909e3a-1ea4-48cd-a66a-c733fc91ab91)
+
+Here the optimisation cannot be done, the implementation requires the usage of flipflop.Let us observe the synthesis of the design using yosys.Follow the below commands for synthesis.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/dff_const5.v
+synth -top dff_const5
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ef1d1c83-df3b-46a6-a575-3dda999e451b)
+
 
 </details>
+
 
 
 ## References
