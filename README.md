@@ -695,6 +695,39 @@ This code describes a 3 bit up counter.In the logic diagram seen below,the two o
 
 ![WhatsApp Image 2023-08-14 at 10 05 29 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6f0c91c7-8e41-4d7a-aba7-d9b02e65cec0)
 
+Follow the below commands for synthesis of the design.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/counter_opt.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/808037a0-5ad0-4857-858e-f264c4fb091b)
+
+Let us take an example of counter_opt2.v. Here optimisation cannot be done and there will be usage of 3 flipflops during the synthesis.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b83fc8e4-88c9-42b2-8dee-9e045331ce96)
+
+Follow the below commands for synthesis of design.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/counter_opt2.v
+synth -top counter_opt
+dfflibmap -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![Screenshot from 2023-08-14 10-27-48](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ef38631b-d737-4298-ab82-016d4ba6a7bb)
+
+
 
 </details>
 
