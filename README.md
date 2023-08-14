@@ -622,6 +622,9 @@ Here let us take an example of dff_const3.v. The verilog code , logic circuit an
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f5606c50-4d9b-434c-be78-f90a03cc72e5)
 
+![WhatsApp Image 2023-08-14 at 10 06 25 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0df1ca76-8576-48c3-ac72-d888ea0d3935)
+
+
 The waveform generated with the help of iverilog and gtkwave can be seen below.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/98c5ad98-c36b-4a71-add8-b4263d53db5d)
@@ -684,17 +687,16 @@ show
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ef1d1c83-df3b-46a6-a575-3dda999e451b)
 
-
-</details>
-
 ### Unused output optimisation
 
 This code describes a 3 bit up counter.In the logic diagram seen below,the two ouputs pf the counter are unused, this means that C[2] and C[1] does not create dependency on the output Q.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/400aa3be-cfe2-4587-9cf8-c0e107715921)
 
+![WhatsApp Image 2023-08-14 at 10 05 29 AM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6f0c91c7-8e41-4d7a-aba7-d9b02e65cec0)
 
 
+</details>
 
 ## References
 
