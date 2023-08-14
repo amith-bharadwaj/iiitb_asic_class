@@ -1080,6 +1080,9 @@ Let us say we need to instantiate hardware for multiple times then we use the ge
 
 ![Screenshot from 2023-08-14 23-11-08](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/5f28ba54-588d-4ede-967a-96987e8c9e61)
 
+For-generate is used for replicating the hardware.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a6bf6c93-e2f2-47fe-969a-0e326956fb53)
 
 
 </details>
