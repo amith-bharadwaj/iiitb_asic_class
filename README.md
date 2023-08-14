@@ -884,8 +884,18 @@ Here we can clearly see the mismatch.Therefore it is advisable to use the blocki
 
 ## Overview
 
+## Usage of if,else if and else statements
+
+The if condition gets the highest priority and the else condition gets the lowest priority during the execution.The hardware circuit created when these conditional statements are used can be seen below.
+
+
+
 ### Danger/Caution with if condition
-1. **Inferred Latches:** This is created due to incomplete "if" statements.
+
+1. **Inferred Latches:** In digital circuit design, latches are memory elements that can inadvertently be inferred when certain conditions are not fully specified in the RTL description.Incomplete or ambiguous if statements in RTL code can lead to the inference of unintended latches during synthesis.Latch inference occurs when the synthesis tool attempts to maintain the value of a signal when the corresponding condition is not met. In the absence of a definite assignment, the tool might infer a latch to store the signal's value until a future condition determines its new value.Inferred latches are generally undesirable in digital circuit design because they can introduce complexity, increase power consumption, and lead to timing issues.Latches are more susceptible to metastability, which can result in unreliable behavior.
+
+2.  
+  
 
 </details>
 
