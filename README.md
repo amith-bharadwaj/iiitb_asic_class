@@ -1,4 +1,4 @@
-
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2fdf9238-53fa-46d3-ab8a-897683bebb69)
 <details>
     
 <summary>DAY-0</summary>
@@ -831,9 +831,44 @@ gtkwave tb_bad_mux.vcd
 
 ![Screenshot from 2023-08-14 16-00-31](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/40218aaf-3acb-411e-80e1-842a2e2f1a19)
 
+
 By comparing this waveform and the previous simulation wave form we can observe the synthesis simulation mismatch due to the absence of the input signal in the sensitivity list of always block.
 
 ## Synthesis Simulation mismatch for Blocking statements
+
+Our aim in this design is to arrive at "d=(a+b)c" as shown in the below logic diagram.
+
+![WhatsApp Image 2023-08-14 at 4 16 25 PM(1)](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/22f02198-650c-4efb-b06f-94af35ac3924)
+
+The below waveform is generated with the help of iverilog and gtkwave.
+
+![Screenshot from 2023-08-14 16-00-31](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/03c8ad27-fb31-410b-88fa-cb471e6fa047)
+
+In this wavevform we can observe that the inputs taken for performing logic operation is the past value therefore we arrive at an incorrect output. Now let us synthesize the logic using the following commands.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/blocking_caveat.v
+synth -top blocking_caveat
+write_verilog -noattr blocking_caveat.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ce6fd371-6d5f-404b-8310-d41937bdad07)
+
+
+Let us do the GLS (Gate Level Simulation) for this mux
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b6db19cf-acd9-47c5-b225-a3594694a865)
+
+Here we can clearly see the mismatch.Therefore it is advicable to use the blocking statements only when it is necessary and rest of the time non-blocking statements has to be used.
 
 </details>
 
