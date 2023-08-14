@@ -760,6 +760,31 @@ Verilog supports blocking and non-blocking assignments statements within the alw
 
 The usage of non-blocking assignments in sequential circuits allows for the modeling of the behavior of flip-flops and registers in a way that accurately reflects the hardware implementation.When a flip-flop or register is updated in a Verilog model using a non-blocking assignment, the new value is stored in a temporary variable until the next clock edge. This is similar to the behavior of a flip-flop or register in hardware, where the output is only updated at the next clock edge.Using blocking assignments to model sequential circuits can lead to unexpected behavior and simulation results, as the order of execution of assignments can affect the results.
 
+## Simulation and Synthesis
+In this example,we are simulating and synthesizing a mux using ternary operator.The verilog code can be seen below.The simulation is performed using iverilog and gtkwave.
+```
+iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+
+```
+
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2db3940f-f184-477c-91cf-1b80bd3b06a2)
+
+Follow the below commands in the verilog_files directory for synthesis of the design using yosys.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/ternary_operator_mux.v
+synth -top ternary_operator_mux
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![Screenshot from 2023-08-14 14-30-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8a6e297e-cdea-415f-a5f7-327415f186d6)
+
 
 </details>
 
