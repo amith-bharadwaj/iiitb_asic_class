@@ -742,6 +742,8 @@ show
 
 ## Overview
 
+In this lab practice session, we are going to understand the working of GLS and we will observe the synthesis Simulation mismatches occured due to various reasons including absence of certain variables in the sensitivity list of always block and due to the usage of blocking statements.We are also going to perform Gate Level Simulation for all of these programs and observe the mismatches.
+
 ##  What is GLS
 
 Gate level Simulation(GLS) is done at the late level of Design cycle. This is run after the RTL code is synthesized into Netlist. Netlist is translation from RTL into Gates and connection wirings with full functional and timing behaviour. GLS checks if the design has any unintentional dependencies on initial conditions.GLS using iverilog yields same output as that of RTL synthesis because the netlist generated is same as that of RTL design.
