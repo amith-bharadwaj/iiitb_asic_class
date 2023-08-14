@@ -1119,7 +1119,7 @@ Let us simulate and view the waveform for the demux_generate.v file using iveril
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6f604080-caf9-48a5-924f-c60d20b0abd4)
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f08b9104-ec35-4797-8db3-7cf05af35e45)
+
 
 Follow the commands below in the verilog_files directory for performing the simulation.
 
@@ -1129,7 +1129,20 @@ iverilog mux_generate tb_mux_generate.v
 gtkwave tb_mux_generate.vcd
 
 ```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f08b9104-ec35-4797-8db3-7cf05af35e45)
 
+Let us perform the synthesis using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/demux_generate.v
+synth -top demux_generate
+write_verilog demux_generate_net.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
 
 </details>
 
