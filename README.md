@@ -687,6 +687,13 @@ show
 
 </details>
 
+### Unused output optimisation
+
+This code describes a 3 bit up counter.In the logic diagram seen below,the two ouputs pf the counter are unused, this means that C[2] and C[1] does not create dependency on the output Q.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/400aa3be-cfe2-4587-9cf8-c0e107715921)
+
+
 
 
 ## References
