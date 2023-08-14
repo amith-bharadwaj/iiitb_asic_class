@@ -960,9 +960,33 @@ show
 
 ### Simulation and Synthesis of incomplete overlapping case statements
 
+Let us simulate the verilog file named incomp_case.v and observe the waveforms using iverilog and gtkwave.
+Follow the commands below in the verilog_files directory for performing the simulation.
+
+
+```
+iverilog incomp_case.v tb_incomp_case.v
+./a.out
+gtkwave tb_incomp_case.vcd
+
+```
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f83012c8-978a-492a-9867-bfbf17b3e42a)
 
+Let us perform the synthesis using yosys by following the commands below.
 
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/incomp_case.v
+synth -top incomp_case
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+Here in the image below we can see the creation of latch for the incomplete cases.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8bb06440-ac9d-4b28-9b63-ca942b134eb6)
 
 
 </details>
