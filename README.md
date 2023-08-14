@@ -1,6 +1,6 @@
 <details>
     
-<summary> DAY-0 </summary>
+<summary>DAY-0</summary>
 
 
     
@@ -748,7 +748,8 @@ In this lab practice session, we are going to understand the working of GLS and 
 
 Gate level Simulation(GLS) is done at the late level of Design cycle. This is run after the RTL code is synthesized into Netlist. Netlist is translation from RTL into Gates and connection wirings with full functional and timing behaviour. GLS checks if the design has any unintentional dependencies on initial conditions.GLS using iverilog yields same output as that of RTL synthesis because the netlist generated is same as that of RTL design.
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a35f31d2-3d62-44a5-8f6b-189c192e7773)
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/853c003f-37a4-4757-9d77-8569643ac46a)
+
 
 ## Synthesis Simulation Mismatch
 
