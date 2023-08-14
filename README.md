@@ -1115,6 +1115,19 @@ show
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/3bff5bcc-a615-42a3-a102-3d7625849b0c)
 
+
+Let us observe the GLS ( Gate Level Simulation) for this synthesis by executing the following commands.
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v mux_generate_net.v tb_mux_generate.v
+./a.out
+gtkwave tb_mux_generate.vcd
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7e3cc5ac-db1c-48cb-80b1-ee8a2374771f)
+
+
+
 Let us simulate and view the waveform for the demux_generate.v file using iverilog and gtkwave.
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/6f604080-caf9-48a5-924f-c60d20b0abd4)
@@ -1124,9 +1137,9 @@ Let us simulate and view the waveform for the demux_generate.v file using iveril
 Follow the commands below in the verilog_files directory for performing the simulation.
 
 ```
-iverilog mux_generate tb_mux_generate.v
+iverilog demux_generate tb_demux_generate.v
 ./a.out
-gtkwave tb_mux_generate.vcd
+gtkwave tb_demux_generate.vcd
 
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f08b9104-ec35-4797-8db3-7cf05af35e45)
@@ -1143,6 +1156,20 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show
 
 ```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/5b843830-899a-4f67-8265-66182d51731b)
+
+Let us observe the GLS ( Gate Level Simulation) for this synthesis by executing the following commands.
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v demux_generate_net.v tb_demux_generate.v
+./a.out
+gtkwave tb_demux_generate.vcd
+
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e1c0996e-31cd-4ee7-b189-e7eecc8aff05)
+
 
 </details>
 
