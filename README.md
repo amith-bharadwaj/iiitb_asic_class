@@ -1178,7 +1178,10 @@ Let us take an example of ripple carry adder and do the simulation and synthesis
 *Note: If we add N bit and M bit numbers the result of the addition will be Max(N,M)+1 bits.*
 
 The verilog files fa.v and rca.v can be seen below.
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a22ff0fb-9905-43ab-be3f-7667029b9437)
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b86d4966-b6bf-41b0-98ab-7feef1b372af)
+
+
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7a94679a-7151-447c-8c9a-3e14905d5ad0)
 
 Follow the commands below in the verilog_files directory for performing the simulation.
