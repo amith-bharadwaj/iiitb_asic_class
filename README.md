@@ -742,6 +742,11 @@ show
 
 ##  What is GLS
 
+Gate level Simulation(GLS) is done at the late level of Design cycle. This is run after the RTL code is synthesized into Netlist. Netlist is translation from RTL into Gates and connection wirings with full functional and timing behaviour. GLS checks if the design has any unintentional dependencies on initial conditions.GLS using iverilog yields same output as that of RTL synthesis because the netlist generated is same as that of RTL design.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a35f31d2-3d62-44a5-8f6b-189c192e7773)
+
+
 
 </details>
 
@@ -752,3 +757,5 @@ show
 2. https://www.vsdiat.com/
 3. https://github.com/kunalg123/vsdflow
 4. https://teamvlsi.com
+5. https://www.linkedin.com/pulse/gate-level-simulation-comprehensive-overview-jerry-mcgoveran/
+6. https://jerinjacobblog.wordpress.com/2020/07/20/gate-level-simulation-introduction/
