@@ -763,11 +763,11 @@ The usage of non-blocking assignments in sequential circuits allows for the mode
 ## Simulation and Synthesis
 
 In this example,we are simulating and synthesizing a mux using ternary operator.The verilog code can be seen below.The simulation is performed using iverilog and gtkwave.
+
 ```
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
 ./a.out
 gtkwave tb_ternary_operator_mux.vcd
-
 ```
 
 
