@@ -779,13 +779,20 @@ yosys
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 read_verilog ../verilog_files/ternary_operator_mux.v
 synth -top ternary_operator_mux
+write_verilog -noattr ternary_operator_mux_netlist.v
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
 show
 
 ```
 ![Screenshot from 2023-08-14 14-30-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8a6e297e-cdea-415f-a5f7-327415f186d6)
 
+Let us do the GLS (Gate Level Simulation for this mux
 
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_netlist.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
 </details>
 
 
