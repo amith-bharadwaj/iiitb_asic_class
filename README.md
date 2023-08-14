@@ -888,17 +888,23 @@ Here we can clearly see the mismatch.Therefore it is advisable to use the blocki
 
 The if condition gets the highest priority and the else condition gets the lowest priority during the execution.The hardware circuit which is created when these conditional statements are used can be seen below.
 
-*Note*: *Whatever variable we are assigning in the "case" and "if" statements, they have to be declared as "reg" type variable.*  
-
 ![WhatsApp Image 2023-08-14 at 5 36 41 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/05946a53-85bb-4bee-9d88-ece7e0082d14)
 
+## Usage of case statements
 
-### Danger/Caution with if condition
+The case statement has a given expression and it is checked with the expression (case item) mentioned in the list in the written order and if it matches then the statement or group of statements are executed. If it does not match with any of the written expressions of the list then, the default statement will be executed.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/5e658473-bddb-4e0e-953b-0f8e10a6328a)
+
+*Note*: *The variables which we are assigning in the "case" and "if" statements have to be declared as "reg" type variable.*  
+
+### Danger/Caution with if condition and case statements
 
 1. **Inferred Latches:** In digital circuit design, latches are memory elements that can inadvertently be inferred when certain conditions are not fully specified in the RTL description.Incomplete or ambiguous if statements in RTL code can lead to the inference of unintended latches during synthesis.Latch inference occurs when the synthesis tool attempts to maintain the value of a signal when the corresponding condition is not met. In the absence of a definite assignment, the tool might infer a latch to store the signal's value until a future condition determines its new value.Inferred latches are generally undesirable in digital circuit design because they can introduce complexity, increase power consumption, and lead to timing issues.Latches are more susceptible to metastability, which can result in unreliable behavior.
 
-*Note*: *Whatever variable we are assigning in the "case" and "if" statements, they have to be declared as "reg" type variable.*  
-  
+
+
+
 
 </details>
 
@@ -910,3 +916,4 @@ The if condition gets the highest priority and the else condition gets the lowes
 4. https://teamvlsi.com
 5. https://www.linkedin.com/pulse/gate-level-simulation-comprehensive-overview-jerry-mcgoveran/
 6. https://jerinjacobblog.wordpress.com/2020/07/20/gate-level-simulation-introduction/
+7. https://vlsiverify.com/verilog
