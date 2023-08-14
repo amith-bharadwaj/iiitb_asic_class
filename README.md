@@ -988,6 +988,90 @@ Here in the image below we can see the creation of latch for the incomplete case
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8bb06440-ac9d-4b28-9b63-ca942b134eb6)
 
+### Simulation and Synthesis of complete overlapping case statements
+
+Let us simulate the verilog file named comp_case.v and observe the waveforms using iverilog and gtkwave.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e7e77980-1dbe-4c19-9ca0-794e5a919945)
+
+
+Follow the commands below in the verilog_files directory for performing the simulation.
+
+```
+iverilog comp_case.v tb_comp_case.v
+./a.out
+gtkwave tb_comp_case.vcd
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/f08edec7-3697-47c4-839f-a977f435f6f4)
+
+
+Let us perform the synthesis using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/comp_case.v
+synth -top comp_case
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+Here in the image below we can see that there is no latching action.
+
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/165793fb-a9ce-4300-bf7f-75d9da14b405)
+
+Let us perform the synthesis for the verilog program  partial_case_assign.v  using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/partial_case_assign.v
+synth -top partial_case_assign
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/bba0cf78-0d9e-42d7-a6d4-32fe9246edc4)
+
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/15cba315-f180-408a-a924-c54c7daeedf8)
+
+
+
+Let us simulate the verilog file named bad_case.v and observe the waveforms using iverilog and gtkwave.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/816a8d3b-db07-4794-90d9-35fb4de8f94d)
+
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e2f5f78c-23da-4341-a4c2-92e1646b5ab6)
+
+Let us perform the synthesis using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/bad_case.v
+synth -top bad_case
+write_verilog bad_case_net.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+Here we can observe the problem with the overlapping case but here there are no latches present.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8b7ad1af-a5bc-4da5-a8d1-39760ba3d0ac)
+
+Let us perform the GLS (Gate level Simulation) to observe the synthesis simulation mismatch.
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_case_net.v tb_bad_case.v
+./a.out
+gtkwave tb_bad_case.vcd
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/d07e2af1-e0a2-4248-b5cb-85aef38ea9cb)
 
 </details>
 
