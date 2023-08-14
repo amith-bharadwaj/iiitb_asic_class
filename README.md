@@ -817,8 +817,9 @@ read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog ../verilog_files/bad_mux.v
 synth -top bad_mux
 write_verilog -noattr bad_mux_net.v
-abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
-``
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+```
 
 Let us do the GLS (Gate Level Simulation) for this mux
 
