@@ -746,6 +746,19 @@ Gate level Simulation(GLS) is done at the late level of Design cycle. This is ru
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a35f31d2-3d62-44a5-8f6b-189c192e7773)
 
+## Synthesis Simulation Mismatch
+
+Synthesis simulation mismatch refers to discrepancies between the expected behavior of a digital circuit as described in RTL (Register Transfer Level) code and its actual behavior after synthesis. This mismatch can occur due to various reasons, and identifying and resolving these issues is crucial to ensure that the synthesized design functions correctly. Synthesis and Simulation mismatch occurs when a variable is missed in the sensitivity list of the always block. It also occurs due to the wrong usage of Blocking and Non blocking statements.
+
+## Blocking and Non-Blocking Statements
+
+Verilog supports blocking and non-blocking assignments statements within the always block with their different behaviors.
+
+1. **Blocking Statements:** Blocking assignment statements are assigned using (=) operator and are executed one after the other in a procedural block.It must be executed before the execution of the statements that follow it in a sequential block. But, it will not prevent the execution of statements that run in a parallel block.
+
+2. **Non-Blocking Statements:** Non-Blocking statements are assigned using (<=) and are executed simultaneously. Nonblocking statements allow you to schedule assignments without blocking the procedural flow. You can use the nonblocking procedural statement whenever you want to make several register assignments within the same time step without regard to order or dependence upon each other.
+
+The usage of non-blocking assignments in sequential circuits allows for the modeling of the behavior of flip-flops and registers in a way that accurately reflects the hardware implementation.When a flip-flop or register is updated in a Verilog model using a non-blocking assignment, the new value is stored in a temporary variable until the next clock edge. This is similar to the behavior of a flip-flop or register in hardware, where the output is only updated at the next clock edge.Using blocking assignments to model sequential circuits can lead to unexpected behavior and simulation results, as the order of execution of assignments can affect the results.
 
 
 </details>
