@@ -904,6 +904,33 @@ The case statement has a given expression and it is checked with the expression 
 
 1. **Inferred Latches:** In digital circuit design, latches are memory elements that can inadvertently be inferred when certain conditions are not fully specified in the RTL description.Incomplete or ambiguous if statements in RTL code can lead to the inference of unintended latches during synthesis.Latch inference occurs when the synthesis tool attempts to maintain the value of a signal when the corresponding condition is not met. In the absence of a definite assignment, the tool might infer a latch to store the signal's value until a future condition determines its new value.Inferred latches are generally undesirable in digital circuit design because they can introduce complexity, increase power consumption, and lead to timing issues.Latches are more susceptible to metastability, which can result in unreliable behavior.
 
+### Simulation and Synthesis of examples
+
+Let us simulate the verilog file named incomp_if.v and observe the waveforms using iverilog and gtkwave.
+Follow the commands below in the verilog_files directory for performing the simulation.
+
+```
+iverilog incomp_if.v tb_incomp_if.v
+./a.out
+gtkwave tb_incomp_if.vcd
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/65d3eb70-e553-4169-812d-73340a506c48)
+
+Let us perform the synthesis using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/incomp_if.v
+synth -top incomp_if
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+Here in this image below we can see the creation of latch during synthesis, this is the latch inferred due to incomplete if statement in the verilog program.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/d6943949-5a9a-433e-a7dd-c4d39d8ce8e2)
 
 
 </details>
