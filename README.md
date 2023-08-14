@@ -446,7 +446,9 @@ These are custom optimizations which happens during synthesis,the logic is imple
 
 ## Overview
 
-### Combinational Logic Optimisation
+
+
+## Combinational Logic Optimisation
 
 Generally, the circuit is constrained to a minimum chip area meeting a predefined response delay. The goal of logic optimization of a given circuit is to obtain the smallest logic circuit that evaluates to the same values as the original one.Usually, the smaller circuit with the same function is cheaper,takes less space,consumes less power, has shorter latency, and minimizes risks of unexpected cross-talk, hazard of delayed signal processing, and other issues present at the nano-scale level of metallic structures on an integrated circuit. 
 Optimization also means
@@ -457,13 +459,13 @@ Optimization also means
 
 Here is an example for optimization.Synthesis tool does this type of boolean logic optimization to get the most optimized logic.
 
-### Sequential constant
+## Sequential constant
 
 In the logic diagram below, there is no possibility for Q to become 1,it is always set to 0.So the output Y is always 1.It doesnt require any operation to be performed. This is an example for Sequential Constant.
 
 ![WhatsApp Image 2023-08-13 at 10 25 06 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ded0d3ff-5a7d-4e8a-a9d2-8e6c2b50173f)
 
-### Types of Sequential optimisations
+## Types of Sequential optimisations
 
 1. **State optimisation:** Optimization of unused states.
 
@@ -475,7 +477,7 @@ Here the opt_check verilog file is synthesized and checked for optimization.
 
 ![Screenshot from 2023-08-13 22-59-07](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/546d4c3f-5cd5-4b0c-b998-debfd4a0ecce)
 
-### Synthesis of combinational logic optimisations 
+## Synthesis of combinational logic optimisations 
 
 Follow the below commands to synthesize opt_check. The synthesized optimized design can be seen below.
 
@@ -579,7 +581,7 @@ show
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ed0cea13-e020-41ca-bc2c-d5950292554e)
 
-### Simulation and Synthesis of Sequential logic optimisations 
+## Simulation and Synthesis of Sequential logic optimisations 
 
 Here below we can observe the simulation of dff_const1.v. Here the logic optimisation is not possible because, the output is synchronized with the clock therefore even if the reset changes its value , the flip flop will wait until the next edge of the clock pulse arrives.
 
@@ -687,7 +689,7 @@ show
 ```
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ef1d1c83-df3b-46a6-a575-3dda999e451b)
 
-### Unused output optimisation
+## Unused output optimisation
 
 This code describes a 3 bit up counter.In the logic diagram seen below,the two ouputs pf the counter are unused, this means that C[2] and C[1] does not create dependency on the output Q.
 
