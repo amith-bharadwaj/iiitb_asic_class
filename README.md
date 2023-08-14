@@ -884,6 +884,8 @@ Here we can clearly see the mismatch.Therefore it is advisable to use the blocki
 
 ## Overview
 
+In this lab session, we will go through the understanding and implementation of if,else if,else and case statements.We will also understand how to use the for loop and generate for loop for performing evaluation and replication of hardware instances respectively.
+
 ## Usage of if,else if and else statements
 
 The if condition gets the highest priority and the else condition gets the lowest priority during the execution.The hardware circuit which is created when these conditional statements are used can be seen below.
@@ -1169,6 +1171,51 @@ gtkwave tb_demux_generate.vcd
 ```
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/e1c0996e-31cd-4ee7-b189-e7eecc8aff05)
+
+Let us take an example of ripple carry adder and do the simulation and synthesis for the same.
+
+*Note: If we add N bit and N bit numbers the result of the addition will be of N+1 bits.*
+*Note: If we add N bit and M bit numbers the result of the addition will be Max(N,M)+1 bits.*
+
+The verilog files fa.v and rca.v can be seen below.
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a22ff0fb-9905-43ab-be3f-7667029b9437)
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/7a94679a-7151-447c-8c9a-3e14905d5ad0)
+
+Follow the commands below in the verilog_files directory for performing the simulation.
+
+```
+iverilog fa.v rca.v tb_rca.v
+./a.out
+gtkwave tb_rca.vcd
+
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/dccdcc92-36dd-41c5-b5bd-8c8f8c6a4e92)
+
+Let us perform the synthesis using yosys by following the commands below.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/rca.v
+read_verilog ../verilog_files/fa.v
+synth -top rca
+write_verilog rca_net.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+show
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/a7b020f9-835a-4ddb-a052-10eacad3a220)
+
+Let us observe the GLS ( Gate Level Simulation) for this synthesis by executing the following commands.
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v rca_net.v tb_rca.v
+./a.out
+gtkwave tb_demux_generate.vcd
+
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/30d7d9c4-a80e-48f2-b0bc-dc20f2ad9b53)
 
 
 </details>
