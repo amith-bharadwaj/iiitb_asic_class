@@ -1078,7 +1078,7 @@ gtkwave tb_bad_case.vcd
 There is a forloop which is used inside the always block and there is a generate followed by forloop which is used outside the always block.
 Let us say we need to instantiate hardware for multiple times then we use the generate forloop.For the purpose of evaluating expressions repeatedly then we use the forloop.Let us take an example of building a 32:1 mux.Usage of for loop and blocking statements help us to build this multiplexer in a easy way.
 
-![WhatsApp Image 2023-08-14 at 11 07 57 PM](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/90a244a6-a644-4332-81c8-158495db7079)
+![Screenshot from 2023-08-14 23-11-08](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/5f28ba54-588d-4ede-967a-96987e8c9e61)
 
 
 
