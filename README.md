@@ -446,7 +446,7 @@ These are custom optimizations which happens during synthesis,the logic is imple
 
 ## Overview
 
-In this section, we are going to understand and implement a various types of logic optimisations including the combinational Logic optimisation,sequential logic optimisations and optimisation for unused outputs.
+In this section, we are going to understand and implement the various types of logic optimisations including the combinational Logic optimisation,sequential logic optimisation and optimisation for unused outputs.
 
 ## Combinational Logic Optimisation
 
