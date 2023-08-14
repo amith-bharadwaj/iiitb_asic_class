@@ -761,6 +761,7 @@ Verilog supports blocking and non-blocking assignments statements within the alw
 The usage of non-blocking assignments in sequential circuits allows for the modeling of the behavior of flip-flops and registers in a way that accurately reflects the hardware implementation.When a flip-flop or register is updated in a Verilog model using a non-blocking assignment, the new value is stored in a temporary variable until the next clock edge. This is similar to the behavior of a flip-flop or register in hardware, where the output is only updated at the next clock edge.Using blocking assignments to model sequential circuits can lead to unexpected behavior and simulation results, as the order of execution of assignments can affect the results.
 
 ## Simulation and Synthesis
+
 In this example,we are simulating and synthesizing a mux using ternary operator.The verilog code can be seen below.The simulation is performed using iverilog and gtkwave.
 ```
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
@@ -786,15 +787,54 @@ show
 ```
 ![Screenshot from 2023-08-14 14-30-13](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/8a6e297e-cdea-415f-a5f7-327415f186d6)
 
-Let us do the GLS (Gate Level Simulation for this mux
+Let us do the GLS (Gate Level Simulation) for this mux
 
 ```
 iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_netlist.v tb_ternary_operator_mux.v
 ./a.out
 gtkwave tb_ternary_operator_mux.vcd
 ```
-</details>
+![Screenshot from 2023-08-14 15-20-39](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/0b93efb0-edf1-42fa-8e4c-5a1fe6ce10d6)
 
+Let us perform the Simulation and synthesis of badmux.v.Follow the below commands for performing simulation.
+
+```
+iverilog bad_mux.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/cc4e5d69-a1c7-4611-b34f-9b129ea28df8)
+
+Since the inputs are not present in the sensitivity list of always block, the activities of the input are not sensed therefore the output is not calculated even when the inputs are changed.
+
+Follow the below commands in the verilog_files directory for synthesis of the design using yosys.
+
+```
+yosys
+read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+read_verilog ../verilog_files/bad_mux.v
+synth -top bad_mux
+write_verilog -noattr bad_mux_net.v
+abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
+``
+
+Let us do the GLS (Gate Level Simulation) for this mux
+
+```
+iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_net.v tb_bad_mux.v
+./a.out
+gtkwave tb_bad_mux.vcd
+```
+
+![Screenshot from 2023-08-14 16-00-31](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/40218aaf-3acb-411e-80e1-842a2e2f1a19)
+
+By comparing this waveform and the previous simulation wave form we can observe the synthesis simulation mismatch due to the absence of the input signal in the sensitivity list of always block.
+
+## Synthesis Simulation mismatch for Blocking statements
+
+</details>
 
 ## References
 
