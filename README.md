@@ -864,6 +864,7 @@ Let us do the GLS (Gate Level Simulation) for this mux
 iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v blocking_caveat_net.v tb_blocking_caveat.v
 ./a.out
 gtkwave tb_blocking_caveat.vcd
+
 ```
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b6db19cf-acd9-47c5-b225-a3594694a865)
