@@ -869,7 +869,7 @@ gtkwave tb_blocking_caveat.vcd
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b6db19cf-acd9-47c5-b225-a3594694a865)
 
-Here we can clearly see the mismatch.Therefore it is advicable to use the blocking statements only when it is necessary and rest of the time non-blocking statements has to be used.
+Here we can clearly see the mismatch.Therefore it is advisable to use the blocking statements only when it is necessary and rest of the time non-blocking statements has to be used.
 
 </details>
 
