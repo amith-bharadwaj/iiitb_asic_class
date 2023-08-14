@@ -711,7 +711,8 @@ show
 
 Let us take an example of counter_opt2.v. Here optimisation cannot be done and there will be usage of 3 flipflops during the synthesis.
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b83fc8e4-88c9-42b2-8dee-9e045331ce96)
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/9ccac50b-e90e-4cc0-9793-77e3fbab7aec)
+
 
 Follow the below commands for synthesis of design.
 
