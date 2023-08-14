@@ -898,11 +898,11 @@ The case statement has a given expression and it is checked with the expression 
 
 *Note*: *The variables which we are assigning in the "case" and "if" statements have to be declared as "reg" type variable.*  
 
+*Note*: *Assign all the outputs in all the segments of case to prevent the occurance of inferred latches* 
+
 ### Danger/Caution with if condition and case statements
 
 1. **Inferred Latches:** In digital circuit design, latches are memory elements that can inadvertently be inferred when certain conditions are not fully specified in the RTL description.Incomplete or ambiguous if statements in RTL code can lead to the inference of unintended latches during synthesis.Latch inference occurs when the synthesis tool attempts to maintain the value of a signal when the corresponding condition is not met. In the absence of a definite assignment, the tool might infer a latch to store the signal's value until a future condition determines its new value.Inferred latches are generally undesirable in digital circuit design because they can introduce complexity, increase power consumption, and lead to timing issues.Latches are more susceptible to metastability, which can result in unreliable behavior.
-
-
 
 
 
