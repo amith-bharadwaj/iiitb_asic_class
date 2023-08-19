@@ -1,4 +1,7 @@
-[week 1](#week_1)
+<details>
+<summary>WEEK_1</summary>
+    
+
 
 <details>
     
@@ -1225,6 +1228,7 @@ gtkwave tb_demux_generate.vcd
 
 </details>
 
+</details>
 ## References
 
 1. https://yosyshq.net/
