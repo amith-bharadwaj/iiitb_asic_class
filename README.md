@@ -1,3 +1,5 @@
+[week 1](#week_1)
+
 <details>
     
 <summary>DAY-0</summary>
@@ -7,7 +9,7 @@
 <br>
     
 # iiitb_ASIC_Class
-    
+# week_1    
 ## DAY-0 Installation of Softwares
 
 ### Yosys Installation
