@@ -1230,9 +1230,9 @@ gtkwave tb_demux_generate.vcd
 
 <details>
     
-<summary>WEEK_1</summary>
+<summary>WEEK_2</summary>
 
-# WEEK_1
+# WEEK_2
 
 <details>
     
@@ -1242,24 +1242,23 @@ gtkwave tb_demux_generate.vcd
 ## Introduction to RISC-V ISA and GNU compiler toolchain
 
 RISC-V (pronounced "risk-five") is an open-source instruction set architecture (ISA) that is designed to be simple, extensible, and modular. It is often referred to as a "free and open RISC instruction set architecture," as it is not encumbered by patents or proprietary restrictions, allowing anyone to use, modify, and contribute to its development.
-The C program is compiled into RISC-V assembly language program, this assembly language program is converted into machine level program, which is binary language program. These binary bits will be executed into this particular layout seen in the image below.
 
-![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/22d382c6-2b39-40c5-bed6-c2d4398c8cf7)
+The C program is compiled into RISC-V assembly language program, this assembly language program is converted into machine level program, which is binary language program. These binary bits will be executed into this particular layout seen in the image below.The Risc-V architecture is implemented by the given RTL (picorv32 cpu core).
 
-The Risc-V architecture is implemented by the given RTL (picorv32 cpu core)
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ff4b5316-9ea3-4eb9-bc8d-1dc3c3222c02)
 
+The application software will run on the hardware by the given flow.Apps enter into the block of system software, this block converts into the binary language, the system software block contains OS,Compiler and Assembler.OS handles IO operations,allocates memory and performs low level system functions.
+The output of the OS are small chunks of C,C++ or Java language, these are taken by the compiler and converted into instructions.Depending on the hardware the format or syntax of the instructions will change. Then the assembler will convert these instructions into binary language program.This binary language is fed to the hardware. 
 
 
 </details>
 
 
 
-<summary>WEEK_2</summary>
-
 
 
 </details>
+
 ## References
 
 1. https://yosyshq.net/
