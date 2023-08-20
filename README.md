@@ -1269,6 +1269,39 @@ gcc sum1ton.c
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2405e1cf-0f84-4390-a06d-b97ebbc33df2)
 
+Now let us compile it with risv compiler
+
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/531aec9c-25d6-4fc7-89eb-b2fc4b312e47)
+
+It will generate the file sum1ton.o, let us go to another tab and run the following commands.
+
+```
+riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+It will give us a bunch of assembly language code.
+
+We need to look for main section.
+
+```
+/main
+```
+Here we can see 15 instructions which came out when we used the previous commands.Since it is a byte instruction, it always increments by 4.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/17fd6343-fbe1-43e1-816c-e7e5d0766c6c)
+
+Now, let us run the command with -ofast.
+
+```
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+
+```
+Here we can see that 12 instructions were produced.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/980923ad-7fee-4096-b298-8c1797c33bdd)
+
 
 
 </details>
