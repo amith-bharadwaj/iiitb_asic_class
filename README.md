@@ -2,15 +2,11 @@
     
 <summary>WEEK_1</summary>
 
-    
-
 
 <details>
     
 <summary>DAY-0</summary>
 
-
-    
 <br>
     
 # iiitb_ASIC_Class
@@ -1232,6 +1228,38 @@ gtkwave tb_demux_generate.vcd
 
 </details>
 
+<details>
+    
+<summary>WEEK_1</summary>
+
+# WEEK_1
+
+<details>
+    
+<summary>DAY_1</summary>
+
+# DAY-1
+## Introduction to RISC-V ISA and GNU compiler toolchain
+
+RISC-V (pronounced "risk-five") is an open-source instruction set architecture (ISA) that is designed to be simple, extensible, and modular. It is often referred to as a "free and open RISC instruction set architecture," as it is not encumbered by patents or proprietary restrictions, allowing anyone to use, modify, and contribute to its development.
+The C program is compiled into RISC-V assembly language program, this assembly language program is converted into machine level program, which is binary language program. These binary bits will be executed into this particular layout seen in the image below.
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/22d382c6-2b39-40c5-bed6-c2d4398c8cf7)
+
+The Risc-V architecture is implemented by the given RTL (picorv32 cpu core)
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/ff4b5316-9ea3-4eb9-bc8d-1dc3c3222c02)
+
+
+
+</details>
+
+
+
+<summary>WEEK_2</summary>
+
+
+
+</details>
 ## References
 
 1. https://yosyshq.net/
