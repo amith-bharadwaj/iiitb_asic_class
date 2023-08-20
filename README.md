@@ -1254,13 +1254,17 @@ The output of the OS are small chunks of C,C++ or Java language, these are taken
 
 ![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/982be285-c03e-4496-aa2d-40e9c3fc454e)
 
+## LAB work for RISC-V software toolchain
+
+### Program to compute Sum from 1 to N
+
+
+
+
+
 
 
 </details>
-
-
-
-
 
 </details>
 
