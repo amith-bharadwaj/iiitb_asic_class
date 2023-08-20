@@ -1256,11 +1256,18 @@ The output of the OS are small chunks of C,C++ or Java language, these are taken
 
 ## LAB work for RISC-V software toolchain
 
-### Program to compute Sum from 1 to N
+Let us execute a simple program which computes sum from 1 to a given number N.
+
+```
+gedit sum1ton.c
+gcc sum1ton.c
+./a.out
+```
+
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/b1799e88-2b3b-40c6-a8cd-1bc384aaffdc)
 
 
-
-
+![image](https://github.com/amith-bharadwaj/iiitb_asic_class/assets/84613258/2405e1cf-0f84-4390-a06d-b97ebbc33df2)
 
 
 
